@@ -1,0 +1,6 @@
+[submodule "hejlfram"]
+	path = hejlfram
+	url = https://github.com/braun/hejlfram.git
+[submodule "wrana"]
+	path = wrana
+	url = https://github.com/braun/wrana.git

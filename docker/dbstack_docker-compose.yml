@@ -1,0 +1,26 @@
+version: '2'
+services:
+  MongoExpressGUI:
+    image: mongo-express
+    hostname: dbadmin
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: keeper
+      ME_CONFIG_MONGODB_ADMINPASSWORD: kostival
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: 'true'
+      ME_CONFIG_MONGODB_SERVER: MongoDB
+      ME_CONFIG_BASICAUTH_USERNAME: keeper
+      ME_CONFIG_BASICAUTH_PASSWORD: kostival
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+  MongoDB:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: keeper
+      MONGO_INITDB_ROOT_PASSWORD: kostival
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.hostname_override: container_name
+ 

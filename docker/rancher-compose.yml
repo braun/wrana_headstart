@@ -1,0 +1,11 @@
+version: '2'
+services:
+  MongoExpressGUI:
+    scale: 1
+    start_on_create: true
+  MongoDB:
+    scale: 1
+    start_on_create: true
+  App:
+    scale: 1
+    start_on_create: true

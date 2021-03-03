@@ -1,0 +1,1565 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/bg.svg);
+  background-size: cover;
+}
+.error {
+  color: red !important;
+}
+.bold {
+  font-weight: bold;
+}
+body {
+  height: 100vh;
+}
+.padleft {
+  padding-left: 5px;
+}
+.padright {
+  padding-right: 5px;
+}
+.container {
+  padding: 5px;
+}
+.nopadding {
+  padding: 0px!important;
+}
+.button {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.grow {
+  flex-grow: 1;
+}
+.stretch {
+  align-self: stretch;
+}
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.botright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.stdpadding {
+  padding: 5px;
+}
+.padding-bottom {
+  padding-bottom: 5px;
+}
+.margin-bottom {
+  margin-bottom: 5px;
+}
+.flexcont {
+  display: flex;
+}
+.flexcont.baseline {
+  align-items: baseline;
+}
+.flexcont.right {
+  justify-content: flex-end;
+}
+.flexcont.left {
+  justify-content: flex-start;
+}
+.flexcont.center {
+  justify-content: center;
+  align-items: center;
+}
+.flexcont.centerv {
+  align-items: center;
+}
+.flexcont.spaceBetween {
+  justify-content: space-between;
+}
+.flexcont.spaceAround {
+  justify-content: space-around;
+}
+.flexcont.spaceEvenly {
+  justify-content: space-evenly;
+}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.horizontal.baseline {
+  align-items: baseline;
+}
+.horizontal.right {
+  justify-content: flex-end;
+}
+.horizontal.left {
+  justify-content: flex-start;
+}
+.horizontal.center {
+  justify-content: center;
+  align-items: center;
+}
+.horizontal.centerv {
+  align-items: center;
+}
+.horizontal.spaceBetween {
+  justify-content: space-between;
+}
+.horizontal.spaceAround {
+  justify-content: space-around;
+}
+.horizontal.spaceEvenly {
+  justify-content: space-evenly;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.vertical.baseline {
+  align-items: baseline;
+}
+.vertical.right {
+  justify-content: flex-end;
+}
+.vertical.left {
+  justify-content: flex-start;
+}
+.vertical.center {
+  justify-content: center;
+  align-items: center;
+}
+.vertical.centerv {
+  align-items: center;
+}
+.vertical.spaceBetween {
+  justify-content: space-between;
+}
+.vertical.spaceAround {
+  justify-content: space-around;
+}
+.vertical.spaceEvenly {
+  justify-content: space-evenly;
+}
+.plainApp H1 {
+  font-size: 16pt;
+}
+.plainLayout {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+.plainContent {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.progres {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: darkgray;
+}
+.dialogPane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.dialogPane > div {
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  min-height: 5cm;
+  width: 85%;
+  justify-content: space-between;
+}
+.dialogPane .dialogContent {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.dialogPane .dialogContent .dialog_message {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.buttonLine {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttonLine.baseline {
+  align-items: baseline;
+}
+.buttonLine.right {
+  justify-content: flex-end;
+}
+.buttonLine.left {
+  justify-content: flex-start;
+}
+.buttonLine.center {
+  justify-content: center;
+  align-items: center;
+}
+.buttonLine.centerv {
+  align-items: center;
+}
+.buttonLine.spaceBetween {
+  justify-content: space-between;
+}
+.buttonLine.spaceAround {
+  justify-content: space-around;
+}
+.buttonLine.spaceEvenly {
+  justify-content: space-evenly;
+}
+.buttonLine button {
+  flex-grow: 1;
+  margin-left: 5px;
+  padding: 10px;
+}
+.buttonArea button {
+  margin-left: 5px;
+}
+.growFormField {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-items: baseline;
+}
+.growFormField.baseline {
+  align-items: baseline;
+}
+.growFormField.right {
+  justify-content: flex-end;
+}
+.growFormField.left {
+  justify-content: flex-start;
+}
+.growFormField.center {
+  justify-content: center;
+  align-items: center;
+}
+.growFormField.centerv {
+  align-items: center;
+}
+.growFormField.spaceBetween {
+  justify-content: space-between;
+}
+.growFormField.spaceAround {
+  justify-content: space-around;
+}
+.growFormField.spaceEvenly {
+  justify-content: space-evenly;
+}
+.growFormField label {
+  padding-right: 5px;
+}
+.growFormField input {
+  flex-grow: 1;
+}
+.badge {
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 50%;
+  width: 0.8cm;
+  height: 0.8cm;
+  text-align: center;
+  font-size: 4mm;
+  padding-top: 2mm;
+  flex-shrink: 0;
+}
+.clickcont {
+  background-image: url('resources/rarrow.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-right: 0.5cm;
+  cursor: pointer;
+}
+.clickcont:hover {
+  background-color: lightgray;
+}
+.clickcont:active {
+  background-color: darkgray;
+}
+.dsbutton {
+  justify-content: center;
+  flex-grow: 1;
+  margin: 5px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.dsbutton.dsempty {
+  border: 0px;
+}
+.dsbutton:hover {
+  background-color: lightgray;
+}
+.dsbutton:active {
+  background-color: darkgray;
+}
+.dsbutton.black {
+  color: white;
+  background-color: black;
+}
+.dsbutton.black:hover {
+  background-color: #333333;
+}
+.dsbutton.black:active {
+  background-color: #666666;
+}
+.dsbutton.red {
+  color: white;
+  background-color: red;
+}
+.dsbutton.red:hover {
+  background-color: #ff6666;
+}
+.dsbutton.red:active {
+  background-color: #ffcccc;
+}
+.dsbutton.orange {
+  color: white;
+  background-color: orange;
+}
+.dsbutton.orange:hover {
+  background-color: #ffc966;
+}
+.dsbutton.orange:active {
+  background-color: #ffedcc;
+}
+.dsbutton.green {
+  color: white;
+  background-color: #349034;
+}
+.dsbutton.green:hover {
+  background-color: #63c763;
+}
+.dsbutton.green:active {
+  background-color: #aee2ae;
+}
+.dsbutton.blue {
+  color: white;
+  background-color: #0a2681;
+}
+.dsbutton.blue:hover {
+  background-color: #1142e0;
+}
+.dsbutton.blue:active {
+  background-color: #6486f3;
+}
+.dsbutton.lightBlue {
+  color: white;
+  background-color: #1d9dcf;
+}
+.dsbutton.lightBlue:hover {
+  background-color: #68c5ea;
+}
+.dsbutton.lightBlue:active {
+  background-color: #c2e8f6;
+}
+.dsbutton.pink {
+  color: white;
+  background-color: #b942b9;
+}
+.dsbutton.pink:hover {
+  background-color: #d68bd6;
+}
+.dsbutton.pink:active {
+  background-color: #f1d6f1;
+}
+.dsbutton.lightPink {
+  color: white;
+  background-color: #bd65bd;
+}
+.dsbutton.lightPink:hover {
+  background-color: #dcacdc;
+}
+.dsbutton.lightPink:active {
+  background-color: #faf4fa;
+}
+.custom-upload {
+  padding: 5px;
+  border: 1px solid #333333;
+  cursor: pointer;
+}
+.custom-upload input {
+  display: none;
+}
+.custom-upload .label {
+  cursor: pointer;
+}
+.gallery {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}
+.gallery .rowheader {
+  padding-top: 1cm;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.gallery .rowheader .collapser {
+  flex-grow: 1;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #555555;
+  border-radius: 2mm;
+  cursor: pointer;
+}
+.gallery .rowheader .collapser .counter {
+  background-color: #333333;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 10px;
+  width: 0.65cm;
+  height: 0.65cm;
+  line-height: 0.42cm;
+  text-align: center;
+}
+.gallery .rowheader .collapser label {
+  padding-left: 5px;
+}
+.gallery .rowheader .collapser button {
+  background-color: transparent;
+  border: 0px;
+}
+.gallery .rowheader .collapser button:active {
+  background-color: transparent;
+  border: 0px;
+}
+.gallery .rowheader .collapser button:focus {
+  background-color: transparent;
+  border: 0px;
+}
+.gallery .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.gallery .column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.gallery .column .imgcont {
+  padding-top: 5px;
+}
+.gallery .column .imgcont .green {
+  color: green;
+}
+.gallery .column .imgcont .gray {
+  color: lightgray;
+}
+.gallery .column .imgcont .buttons {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+  justify-items: stretch;
+  min-height: 1cm;
+}
+.gallery .column .imgcont .buttons .butcol {
+  display: none;
+  border: 1px solid #131313;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 5px;
+  background-color: white;
+}
+.gallery .column .imgcont .buttons .top {
+  align-self: flex-start;
+}
+.gallery .column .imgcont .buttons button {
+  background-color: transparent;
+  align-self: flex-start;
+}
+.gallery .column .imgcont .buttons textarea {
+  border: 1px solid #222222;
+  border-radius: 3px;
+  background-color: white;
+}
+.gallery .column .imgcont .buttons .note {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #333333;
+}
+.gallery .column .imgcont .thumbnail {
+  margin: 0;
+  vertical-align: middle;
+  width: 100%;
+  cursor: pointer;
+}
+.gallery .column .imgcont .editMode {
+  display: none;
+}
+.gallery .column .imgcont.fullscreen {
+  padding: 5px;
+  justify-content: space-between;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #f1f1f1;
+}
+.gallery .column .imgcont.fullscreen .butcol {
+  display: flex;
+}
+.gallery .column .imgcont.fullscreen .editMode {
+  display: inline;
+}
+.gallery .column .imgcont.fullscreen .viewMode {
+  display: none;
+}
+.gallery .column .imgcont.fullscreen .thumbnail {
+  object-fit: contain;
+  max-height: 90%;
+}
+.gallery .column .superview {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+@media screen and (max-width: 800px) {
+  .gallery .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gallery .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.labeled {
+  padding-right: 5px;
+  flex-wrap: wrap;
+}
+.labeled label {
+  padding-right: 5px;
+}
+.radio button {
+  min-width: 3cm;
+}
+.lightgreybg {
+  background-color: #CCCCCC;
+}
+button {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid lightgray;
+  color: black;
+}
+.input {
+  position: relative;
+}
+.tooltip {
+  display: none;
+  padding: 4px;
+  z-index: 100;
+}
+.input:hover .tooltip {
+  display: inline;
+  left: 50px;
+  position: absolute;
+  opacity: 0.8;
+}
+.input:hover .tooltip .error {
+  padding: 2px;
+  background: red;
+  border-radius: 3px;
+  top: 30px;
+  color: white;
+  white-space: pre;
+  font-size: 10pt;
+}
+.input:hover .tooltip .alert {
+  padding: 2px;
+  background: #000000;
+  border-radius: 3px;
+  top: 30px;
+  color: white;
+  white-space: pre;
+  font-size: 14pt;
+}
+.hamButton {
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+.hamButton.opened {
+  color: white;
+}
+#menuCont {
+  padding-top: 5mm;
+}
+.navBarMenuItem {
+  padding-top: 2mm;
+  padding-bottom: 2mm;
+  padding-left: 5mm;
+  padding-right: 5mm;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 14pt;
+}
+.navBarMenuItem:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+.overlogo {
+  padding: 3mm;
+  color: white;
+}
+.hamLayout {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.hamLayout.baseline {
+  align-items: baseline;
+}
+.hamLayout.right {
+  justify-content: flex-end;
+}
+.hamLayout.left {
+  justify-content: flex-start;
+}
+.hamLayout.center {
+  justify-content: center;
+  align-items: center;
+}
+.hamLayout.centerv {
+  align-items: center;
+}
+.hamLayout.spaceBetween {
+  justify-content: space-between;
+}
+.hamLayout.spaceAround {
+  justify-content: space-around;
+}
+.hamLayout.spaceEvenly {
+  justify-content: space-evenly;
+}
+.hamContent {
+  flex-grow: 1;
+  padding-top: 1cm;
+  overflow-y: auto;
+  height: 100%;
+}
+.sidenav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  width: 8cm;
+  border-right: 1px solid black;
+  background: white;
+  z-index: 5000;
+}
+.sidenav img {
+  width: 100%;
+}
+.sidenav.baseline {
+  align-items: baseline;
+}
+.sidenav.right {
+  justify-content: flex-end;
+}
+.sidenav.left {
+  justify-content: flex-start;
+}
+.sidenav.center {
+  justify-content: center;
+  align-items: center;
+}
+.sidenav.centerv {
+  align-items: center;
+}
+.sidenav.spaceBetween {
+  justify-content: space-between;
+}
+.sidenav.spaceAround {
+  justify-content: space-around;
+}
+.sidenav.spaceEvenly {
+  justify-content: space-evenly;
+}
+.checklistitem button {
+  background-color: transparent!important;
+  padding: 2px;
+  color: black;
+}
+.checklistitem strong {
+  font-size: 16pt;
+}
+.stdCard {
+  color: #00121a;
+  border: 1px solid #00121a;
+  margin: 5px;
+}
+.stdCard header {
+  padding: 5px;
+  color: white;
+  background-color: #005980ff;
+}
+.stdCard header H1,
+.stdCard header H2,
+.stdCard header H3,
+.stdCard header H4 {
+  margin: 0px;
+}
+.stdCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.stdCard .cardbody button {
+  background-color: #005980ff;
+}
+.stdCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.stdCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.stdCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.stdCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.stdCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.stdCard .contextMenu.centerv {
+  align-items: center;
+}
+.stdCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.stdCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.stdCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.stdCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.stdCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.stdCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.stdCard .banner {
+  padding: 5mm;
+}
+.stdCard .green {
+  color: green;
+}
+.stdCard .gray {
+  color: lightgray;
+}
+.stdCard .content {
+  padding: 5px;
+  display: block;
+}
+.stdCard button {
+  background-color: #005980ff;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.stdCard button:hover {
+  background-color: #007cb3;
+  cursor: pointer;
+}
+.stdCard button.selected {
+  background-color: white;
+  color: #005980ff;
+  cursor: pointer;
+}
+.stdCard textarea {
+  resize: vertical;
+}
+.stdCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.stdCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.orangeCard {
+  color: #997000;
+  border: 1px solid #997000;
+  margin: 5px;
+}
+.orangeCard header {
+  padding: 5px;
+  color: white;
+  background-color: #ffbb00;
+}
+.orangeCard header H1,
+.orangeCard header H2,
+.orangeCard header H3,
+.orangeCard header H4 {
+  margin: 0px;
+}
+.orangeCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.orangeCard .cardbody button {
+  background-color: #ffbb00;
+}
+.orangeCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.orangeCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.orangeCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.orangeCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.orangeCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.orangeCard .contextMenu.centerv {
+  align-items: center;
+}
+.orangeCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.orangeCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.orangeCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.orangeCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.orangeCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.orangeCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.orangeCard .banner {
+  padding: 5mm;
+}
+.orangeCard .green {
+  color: green;
+}
+.orangeCard .gray {
+  color: lightgray;
+}
+.orangeCard .content {
+  padding: 5px;
+  display: block;
+}
+.orangeCard button {
+  background-color: #ffbb00;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.orangeCard button:hover {
+  background-color: #ffc933;
+  cursor: pointer;
+}
+.orangeCard button.selected {
+  background-color: white;
+  color: #ffbb00;
+  cursor: pointer;
+}
+.orangeCard textarea {
+  resize: vertical;
+}
+.orangeCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.orangeCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.yellowCard {
+  color: #998200;
+  border: 1px solid #998200;
+  margin: 5px;
+}
+.yellowCard header {
+  padding: 5px;
+  color: white;
+  background-color: #ffd900;
+}
+.yellowCard header H1,
+.yellowCard header H2,
+.yellowCard header H3,
+.yellowCard header H4 {
+  margin: 0px;
+}
+.yellowCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.yellowCard .cardbody button {
+  background-color: #ffd900;
+}
+.yellowCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.yellowCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.yellowCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.yellowCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.yellowCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.yellowCard .contextMenu.centerv {
+  align-items: center;
+}
+.yellowCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.yellowCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.yellowCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.yellowCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.yellowCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.yellowCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.yellowCard .banner {
+  padding: 5mm;
+}
+.yellowCard .green {
+  color: green;
+}
+.yellowCard .gray {
+  color: lightgray;
+}
+.yellowCard .content {
+  padding: 5px;
+  display: block;
+}
+.yellowCard button {
+  background-color: #ffd900;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.yellowCard button:hover {
+  background-color: #ffe133;
+  cursor: pointer;
+}
+.yellowCard button.selected {
+  background-color: white;
+  color: #ffd900;
+  cursor: pointer;
+}
+.yellowCard textarea {
+  resize: vertical;
+}
+.yellowCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.yellowCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.greenCard {
+  color: #004002;
+  border: 1px solid #004002;
+  margin: 5px;
+}
+.greenCard header {
+  padding: 5px;
+  color: white;
+  background-color: #00a605;
+}
+.greenCard header H1,
+.greenCard header H2,
+.greenCard header H3,
+.greenCard header H4 {
+  margin: 0px;
+}
+.greenCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.greenCard .cardbody button {
+  background-color: #00a605;
+}
+.greenCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.greenCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.greenCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.greenCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.greenCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.greenCard .contextMenu.centerv {
+  align-items: center;
+}
+.greenCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.greenCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.greenCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.greenCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.greenCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.greenCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.greenCard .banner {
+  padding: 5mm;
+}
+.greenCard .green {
+  color: green;
+}
+.greenCard .gray {
+  color: lightgray;
+}
+.greenCard .content {
+  padding: 5px;
+  display: block;
+}
+.greenCard button {
+  background-color: #00a605;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.greenCard button:hover {
+  background-color: #00d907;
+  cursor: pointer;
+}
+.greenCard button.selected {
+  background-color: white;
+  color: #00a605;
+  cursor: pointer;
+}
+.greenCard textarea {
+  resize: vertical;
+}
+.greenCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.greenCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.blueCard {
+  color: #002599;
+  border: 1px solid #002599;
+  margin: 5px;
+}
+.blueCard header {
+  padding: 5px;
+  color: white;
+  background-color: #003dff;
+}
+.blueCard header H1,
+.blueCard header H2,
+.blueCard header H3,
+.blueCard header H4 {
+  margin: 0px;
+}
+.blueCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.blueCard .cardbody button {
+  background-color: #003dff;
+}
+.blueCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.blueCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.blueCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.blueCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.blueCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.blueCard .contextMenu.centerv {
+  align-items: center;
+}
+.blueCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.blueCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.blueCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.blueCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.blueCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.blueCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.blueCard .banner {
+  padding: 5mm;
+}
+.blueCard .green {
+  color: green;
+}
+.blueCard .gray {
+  color: lightgray;
+}
+.blueCard .content {
+  padding: 5px;
+  display: block;
+}
+.blueCard button {
+  background-color: #003dff;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.blueCard button:hover {
+  background-color: #3364ff;
+  cursor: pointer;
+}
+.blueCard button.selected {
+  background-color: white;
+  color: #003dff;
+  cursor: pointer;
+}
+.blueCard textarea {
+  resize: vertical;
+}
+.blueCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.blueCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.navyCard {
+  color: #00121a;
+  border: 1px solid #00121a;
+  margin: 5px;
+}
+.navyCard header {
+  padding: 5px;
+  color: white;
+  background-color: #005980ff;
+}
+.navyCard header H1,
+.navyCard header H2,
+.navyCard header H3,
+.navyCard header H4 {
+  margin: 0px;
+}
+.navyCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.navyCard .cardbody button {
+  background-color: #005980ff;
+}
+.navyCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.navyCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.navyCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.navyCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.navyCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.navyCard .contextMenu.centerv {
+  align-items: center;
+}
+.navyCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.navyCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.navyCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.navyCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.navyCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.navyCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.navyCard .banner {
+  padding: 5mm;
+}
+.navyCard .green {
+  color: green;
+}
+.navyCard .gray {
+  color: lightgray;
+}
+.navyCard .content {
+  padding: 5px;
+  display: block;
+}
+.navyCard button {
+  background-color: #005980ff;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.navyCard button:hover {
+  background-color: #007cb3;
+  cursor: pointer;
+}
+.navyCard button.selected {
+  background-color: white;
+  color: #005980ff;
+  cursor: pointer;
+}
+.navyCard textarea {
+  resize: vertical;
+}
+.navyCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.navyCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
+.redCard {
+  color: #990100;
+  border: 1px solid #990100;
+  margin: 5px;
+}
+.redCard header {
+  padding: 5px;
+  color: white;
+  background-color: #ff0200;
+}
+.redCard header H1,
+.redCard header H2,
+.redCard header H3,
+.redCard header H4 {
+  margin: 0px;
+}
+.redCard .cardbody .card .tabLeft {
+  padding-left: 5%;
+}
+.redCard .cardbody button {
+  background-color: #ff0200;
+}
+.redCard .contextMenu {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 2cm;
+  color: white;
+  background-color: #000000;
+}
+.redCard .contextMenu.baseline {
+  align-items: baseline;
+}
+.redCard .contextMenu.right {
+  justify-content: flex-end;
+}
+.redCard .contextMenu.left {
+  justify-content: flex-start;
+}
+.redCard .contextMenu.center {
+  justify-content: center;
+  align-items: center;
+}
+.redCard .contextMenu.centerv {
+  align-items: center;
+}
+.redCard .contextMenu.spaceBetween {
+  justify-content: space-between;
+}
+.redCard .contextMenu.spaceAround {
+  justify-content: space-around;
+}
+.redCard .contextMenu.spaceEvenly {
+  justify-content: space-evenly;
+}
+.redCard .contextMenu .contextMenuItem {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+.redCard .contextMenu .contextMenuItem .label {
+  padding-left: 4mm;
+}
+.redCard .contextMenu .contextMenuItem:hover {
+  cursor: pointer;
+  background-color: #131313;
+}
+.redCard .banner {
+  padding: 5mm;
+}
+.redCard .green {
+  color: green;
+}
+.redCard .gray {
+  color: lightgray;
+}
+.redCard .content {
+  padding: 5px;
+  display: block;
+}
+.redCard button {
+  background-color: #ff0200;
+  padding: 5px;
+  color: white;
+  border: 1px solid #000000;
+}
+.redCard button:hover {
+  background-color: #ff3433;
+  cursor: pointer;
+}
+.redCard button.selected {
+  background-color: white;
+  color: #ff0200;
+  cursor: pointer;
+}
+.redCard textarea {
+  resize: vertical;
+}
+.redCard .buttonArea button {
+  margin-left: 3mm;
+  border: 0px;
+}
+.redCard input {
+  padding: 5px;
+  border: 1px solid black;
+}
