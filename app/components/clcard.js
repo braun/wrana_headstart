@@ -50,7 +50,7 @@ function CLCARD(color,title,binder)
             rv.toggleContextMenu();
         })])
     .contextMenuItems([
-      contextMenuItem("CLONE",["ri-file-copy-fill"],"Clone",async (event,button)=>{
+      contextMenuItem("CLONE",["ri-file-copy-fill"],T("Clone"),async (event,button)=>{
             var newdata = JSON.parse(JSON.stringify(mydata));
             delete newdata._id;
             await files.instances.save(newdata)
@@ -59,7 +59,7 @@ function CLCARD(color,title,binder)
              rv.bind(curdata);
          }),
       
-         contextMenuItem("EDIT",["ri-pencil-fill"],"Edit",async (event,button)=>{
+         contextMenuItem("EDIT",["ri-pencil-fill"],T("Edit"),async (event,button)=>{
              editMode = !editMode;
              rv.bind(curdata);
          })

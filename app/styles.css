@@ -1,3 +1,6 @@
+body {
+  background-position: bottom right;
+}
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +52,9 @@ button {
 .grow {
   flex-grow: 1;
 }
+.ngrow {
+  flex-grow: unset!important;
+}
 .stretch {
   align-self: stretch;
 }
@@ -82,6 +88,7 @@ button {
 }
 .flexcont.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .flexcont.center {
   justify-content: center;
@@ -113,6 +120,7 @@ button {
 }
 .horizontal.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .horizontal.center {
   justify-content: center;
@@ -143,6 +151,7 @@ button {
 }
 .vertical.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .vertical.center {
   justify-content: center;
@@ -234,6 +243,7 @@ button {
 }
 .buttonLine.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .buttonLine.center {
   justify-content: center;
@@ -259,6 +269,12 @@ button {
 .buttonArea button {
   margin-left: 5px;
 }
+.stdLabelWidth label {
+  width: 4cm;
+}
+.stdLabelWidth2 label {
+  width: 5cm;
+}
 .growFormField {
   padding: 5px;
   display: flex;
@@ -275,6 +291,7 @@ button {
 }
 .growFormField.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .growFormField.center {
   justify-content: center;
@@ -695,6 +712,7 @@ button {
 }
 .hamLayout.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .hamLayout.center {
   justify-content: center;
@@ -740,6 +758,7 @@ button {
 }
 .sidenav.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .sidenav.center {
   justify-content: center;
@@ -808,6 +827,7 @@ button {
 }
 .stdCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .stdCard .contextMenu.center {
   justify-content: center;
@@ -922,6 +942,7 @@ button {
 }
 .orangeCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .orangeCard .contextMenu.center {
   justify-content: center;
@@ -1036,6 +1057,7 @@ button {
 }
 .yellowCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .yellowCard .contextMenu.center {
   justify-content: center;
@@ -1150,6 +1172,7 @@ button {
 }
 .greenCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .greenCard .contextMenu.center {
   justify-content: center;
@@ -1264,6 +1287,7 @@ button {
 }
 .blueCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .blueCard .contextMenu.center {
   justify-content: center;
@@ -1378,6 +1402,7 @@ button {
 }
 .navyCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .navyCard .contextMenu.center {
   justify-content: center;
@@ -1492,6 +1517,7 @@ button {
 }
 .redCard .contextMenu.left {
   justify-content: flex-start;
+  text-align: left;
 }
 .redCard .contextMenu.center {
   justify-content: center;
