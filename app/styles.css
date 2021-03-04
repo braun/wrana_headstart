@@ -670,9 +670,12 @@ button {
   top: 0;
   left: 0;
   z-index: 10000;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .hamButton.opened {
   color: white;
+  background-color: transparent;
 }
 #menuCont {
   padding-top: 5mm;
@@ -737,7 +740,9 @@ button {
   height: 100%;
 }
 .sidenav {
-  position: fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
